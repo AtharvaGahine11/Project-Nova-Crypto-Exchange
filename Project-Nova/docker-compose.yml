@@ -1,0 +1,26 @@
+services:
+
+  user:
+    build: ./services/user
+    ports:
+      - "5001:5000"
+
+  trading:
+    build: ./services/trading
+    ports:
+      - "5002:5000"
+
+  wallet:
+    build: ./services/wallet
+    ports:
+      - "5003:5000"
+
+  market:
+    build: ./services/market
+    ports:
+      - "5004:5000"
+
+  notification:
+    build: ./services/notification
+    ports:
+      - "5005:5000"
